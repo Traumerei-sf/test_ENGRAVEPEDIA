@@ -5,6 +5,8 @@ on:
       - main
 permissions:
   contents: write
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,3 +29,4 @@ jobs:
       - run: pip install mkdocs-material 
         # 本来はrequirements.txtやPipfileなどで管理するのが良いですが、今回はシンプルに直接インストールします
       - run: mkdocs gh-deploy --force --config-file my-book/mkdocs.yml
+
