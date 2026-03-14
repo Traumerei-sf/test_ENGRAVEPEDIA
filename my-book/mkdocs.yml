@@ -1,0 +1,23 @@
+site_name: ENGRAVEDPEDIA
+site_description: ENGRAVEDPEDIA 本のコレクション
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs # 上部にタブナビゲーションを表示
+    - navigation.sections # セクションごとに表示
+    - navigation.expand # メニューを常に展開
+    - search.suggest
+    - search.highlight
+
+nav:
+  - トップページ: index.md
+  - Book1 (サンプル):
+      - 推薦の言葉: Book1/0-0-推薦.md
+      - 著者紹介: Book1/0-1-著者紹介.md
+  - Book2 (サンプル):
+      - はじめに: Book2/1-はじめに.md
+      - 第一章: Book2/2-第一章.md
+
+markdown_extensions:
+  - md_in_html
